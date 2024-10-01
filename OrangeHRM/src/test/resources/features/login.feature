@@ -8,7 +8,7 @@ Feature: Login Functionality for Open Source HRM
     Given I am on the login page
 
     Scenario: Successful login with valid credentials
-      Given I have entered valid username and valid password
+      Given I have entered valid username and password
       When I click on the login button
       Then I should be logged in successfully
 
