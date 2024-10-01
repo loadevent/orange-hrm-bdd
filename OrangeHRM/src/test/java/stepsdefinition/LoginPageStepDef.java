@@ -4,23 +4,21 @@ import Pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
+import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginPageStepDef {
-    private WebDriver driver;
+    private static WebDriver driver;
     private LoginPage loginPage;
 
-    @Before
-    public void setup(){
+    @BeforeClass
+    public static void setup(){
         driver = new ChromeDriver();
     }
 
-    @After
-    public void terminate(){
+    @AfterClass
+    public static void terminate(){
         if (driver != null) driver.quit();
     }
 
