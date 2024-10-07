@@ -24,5 +24,5 @@ Feature: Login Functionality for Open Source HRM
           | admin11   | admin1          | Invalid credentials |
 
     Scenario: Navigating to the forgot password page
-      When I click on the "Forgot Password" link
+      When I click on the Forgot Password link
       Then I should be redirected to the password reset page
