@@ -17,18 +17,15 @@ import java.time.Duration;
 public class LoginPageStepDef {
     private static WebDriver driver;
     private LoginPage loginPage;
-
     @Before
     public static void setup(){
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
-
     @AfterAll
     public static void terminate(){
         if (driver != null) driver.quit();
     }
-
     @Given("I am on the login page")
     public void i_am_on_the_login_page(){
         driver.get("https://opensource-demo.orangehrmlive.com/auth/login");
