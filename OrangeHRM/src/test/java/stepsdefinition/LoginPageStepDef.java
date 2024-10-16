@@ -28,7 +28,7 @@ public class LoginPageStepDef {
     }
     @Given("I am on the login page")
     public void i_am_on_the_login_page(){
-        driver.get("https://opensource-demo.orangehrmlive.com/auth/login");
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         loginPage = new LoginPage(driver);
     }
     @Given("I have entered valid username and password")
